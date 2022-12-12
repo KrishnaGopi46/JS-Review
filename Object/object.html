@@ -10,43 +10,45 @@
     
 
     <script>
-        //program to add key/value pair in object
+        //add key/value in object
+		
         const Addkeyvalues = { 
-            Name : 'vel',
+            Name : 'gopi',
             qualification : 'BE',
-            dob : '06-May-1997',
             gender : 'male'
         }
         Addkeyvalues.location = 'Tenkasi';
         Addkeyvalues['height'] = '172 cm'
         console.log(Addkeyvalues);
 
-        //program to remove key/value in pair
+        //remove key/value in object
+		
         const removekeyvalues = { 
-            Name : 'vel',
+            Name : 'krish',
             qualification : 'BE',
-            dob : '06-May-1997',
             gender : 'male'
         }
-        delete(removekeyvalues.qualification);
+        delete(removekeyvalues.gender);
         console.log(removekeyvalues);
         
-        //program to change key/value in pair
+        //------------change key/value in object--------------------
+		
         let changekeyvalues={
-           Name : 'vel',
-           age: 26,
+           Name : 'krish',
+           age: 22,
            location : 'Tenkasi',
-           workexperience: '3 years'
+           gender:"male"
         }   
 
-        let renameObjectkey = (changekeyvalues) =>{
+        let rename= (changekeyvalues) =>{
             changekeyvalues.Firstname = changekeyvalues.Name;
             changekeyvalues['Currentage'] = changekeyvalues['age'];
             delete changekeyvalues.Name;
             delete changekeyvalues.age;
         }
-        renameObjectkey(changekeyvalues);
+        rename(changekeyvalues);
         console.log(changekeyvalues);
+		
         // changekeyvalues.firstName=changekeyvalues.Name;
         // delete changekeyvalues.Name;
         
@@ -76,4 +78,3 @@
     </script>
 </body>
 </html>
-Footer
