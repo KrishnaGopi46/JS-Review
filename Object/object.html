@@ -39,14 +39,14 @@
            location : 'Tenkasi',
            gender:"male"
         }   
-
-        let rename= (changekeyvalues) =>{
+		
+		console.log(changekeyvalues);
+		
             changekeyvalues.Firstname = changekeyvalues.Name;
             changekeyvalues['Currentage'] = changekeyvalues['age'];
             delete changekeyvalues.Name;
             delete changekeyvalues.age;
-        }
-        rename(changekeyvalues);
+  
         console.log(changekeyvalues);
 		
         // changekeyvalues.firstName=changekeyvalues.Name;
@@ -56,7 +56,7 @@
         //object in array and object and function
 
         let object = {
-                Name : mydishes(),
+                Name : "",
                 Estd : 'Since 1997',
                 SpecialItem : 'Biriyani',
                 location : 'tenkasi',
@@ -73,7 +73,6 @@
         console.log(object.Name);
         console.log(object['listitems']);
         console.log(object.snacks['cooldrinks'])
-        // console.log(object.Name);
         console.log(object.listitems[2]);
     </script>
 </body>
