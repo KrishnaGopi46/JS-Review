@@ -43,10 +43,7 @@
 		console.log(changekeyvalues);
 		
             changekeyvalues.Firstname = changekeyvalues.Name;
-            changekeyvalues['Currentage'] = changekeyvalues['age'];
             delete changekeyvalues.Name;
-            delete changekeyvalues.age;
-  
         console.log(changekeyvalues);
 		
         // changekeyvalues.firstName=changekeyvalues.Name;
@@ -56,7 +53,7 @@
         //object in array and object and function
 
         let object = {
-                Name : "",
+                Name : "mydishes()",
                 Estd : 'Since 1997',
                 SpecialItem : 'Biriyani',
                 location : 'tenkasi',
@@ -74,6 +71,20 @@
         console.log(object['listitems']);
         console.log(object.snacks['cooldrinks'])
         console.log(object.listitems[2]);
+		
+		
+		
+		
+		let arr=[1,2,3,4];
+		let total=arr.reduce(function(pre,cur){
+			return pre+cur;
+			});
+		console.log(total);
+		
+		let age=17;
+		let vote=age >= 18 ? "eligible" : "noteligible";
+		console.log(vote)
+		
     </script>
 </body>
 </html>
